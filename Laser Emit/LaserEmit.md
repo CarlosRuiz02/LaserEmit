@@ -14,7 +14,7 @@ Como sabemos, a diferencia de un haz de luz convencional un haz de láser avanza
 </ul>
 
 ## Sensor
-![](https://github.com/CarlosRuiz02/LaserEmit/blob/main/Laser%20Emit/LaserEmit.jpg)
+![](https://github.com/CarlosRuiz02/LaserEmit/blob/main/Laser%20Emit/LaserEmit.png)
 ## Diagrama
 ![](https://github.com/CarlosRuiz02/LaserEmit/blob/main/Laser%20Emit/Laser%20Emit%20Diagrama.PNG)
 
