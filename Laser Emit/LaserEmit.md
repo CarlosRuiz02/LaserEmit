@@ -10,7 +10,6 @@ Como sabemos, a diferencia de un haz de luz convencional un haz de láser avanza
 <li>1 x Micro USB Cable</li>
 <li>1 x Protoboard</li>
 <li>3 x Cables hembra</li>
-<li>2 x Cables macho</li>
 </ul>
 
 ## Sensor
