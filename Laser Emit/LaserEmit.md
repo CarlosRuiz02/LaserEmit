@@ -14,32 +14,24 @@ Como sabemos, a diferencia de un haz de luz convencional un haz de láser avanza
 </ul>
 
 ## Sensor
-![](https://github.com/CarlosRuiz02/LightBlocking/blob/main/Light%20Blocking/Light%20Blocking%20sensor.webp)
+![](https://github.com/CarlosRuiz02/LaserEmit/blob/main/Laser%20Emit/LaserEmit.jpg)
 ## Diagrama
-![](https://github.com/CarlosRuiz02/LightBlocking/blob/main/Light%20Blocking/Light%20blocking%20Diagrama.PNG)
-
-**Nota 1: El sensor del diagrama es diferente pero la conexión es exactamente la misma**
+![](https://github.com/CarlosRuiz02/LaserEmit/blob/main/Laser%20Emit/Laser%20Emit%20Diagrama.PNG)
 
 
-**Nota 2: Cambiar el pin del LED al 5**
+**Nota: Cambiar el pin del LASER al 15**
 
 ## Código
 ```c++
-int LedOutput = 5;// Define as LED Output Pin 5
-int SensorPin = 12; // Define as Sensor Pin Input
-int Value;// Define as variable 
-void setup(){
-    Serial.Begin(115200);
-    pinMode(LedOutput,OUTPUT);//Set as LedOutput
-    pinMode(SensorPin,INPUT);//Set as photo interrupter sensor output interface
+const int pin = 15;
+
+void setup() {
+  pinMode(pin, OUTPUT);  //definir pin como salida
 }
+ 
 void loop(){
-    Value=digitalRead(SensorPin);// Set as sensor read SensorPin 
-    if(Value==HIGH){ //If value is equal to HIGH estate then turn LED output = high
-        digitalWrite(LedOutput,HIGH); // Set LedOutPut to HIGH or ON
-        Serial.print("Sensor Bloqueado\n");
-    }else{
-        digitalWrite(LedOutput,LOW); // Set LedOutPut to LOW or OFF
-        Serial.print("Sin Obstrucción\n");
-    }
+  digitalWrite(pin, HIGH);   // poner el Pin en HIGH
+  delay(5000);               // esperar 5 segundos
+  digitalWrite(pin, LOW);    // poner el Pin en LOW
+  delay(2000);               // esperar 2 segundos
 }
